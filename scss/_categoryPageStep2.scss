@@ -1,0 +1,74 @@
+/* List items lengths */
+
+.products li {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+
+    /* One third of the container from 768px viewport width */
+    @media (min-width: 768px) {
+        width: 33.33333%;
+    }
+
+    /* A quarter of the container screen from 1024px viewport width */
+    @media (min-width: 1024px) {
+        width: 25%;
+    }
+
+    /* Specific iPhone 6 portrait fix */
+    @media (width: 375px) {
+        width: 187px;
+
+        &:nth-child(odd) {
+            margin-right: 1px;
+        }
+    }
+
+    /* Specific iPhone 6 landscape fix */
+    @media (width: 667px) {
+        width: 333px;
+
+        &:nth-child(odd) {
+            margin-right: 1px;
+        }
+    }
+}
+
+/* Product images lengths */
+
+.products img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+
+    @media (min-width: 320px) {
+        width: 160px;
+    }
+
+    @media (min-width: 375px) {
+        width: 187px;
+    }
+
+    @media (min-width: 472px) {
+        width: 236px;
+    }
+
+    @media (min-width: 568px) {
+        width: 284px;
+    }
+
+    @media (min-width: 667px) {
+        width: 333px;
+    }
+
+    @media (min-width: 768px) {
+        width: 236px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 305px;
+    }
+
+}
+
+

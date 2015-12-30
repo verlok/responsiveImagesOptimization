@@ -1,0 +1,49 @@
+/*
+ * Category page
+ * -------------
+ */
+
+/* Product images lengths */
+
+/* Half container width on small devices */
+.products li {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+
+    /* One third of the container from 768px viewport width */
+    @media (min-width: 768px) {
+        width: 33.33333%;
+    }
+
+    /* A quarter of the container screen from 1024px viewport width */
+    @media (min-width: 1024px) {
+        width: 25%;
+    }
+
+    /* Specific iPhone 6 portrait fix */
+    @media (width: 375px) {
+        width: 187px;
+        &:nth-child(odd) {
+            margin-right: 1px;
+        }
+    }
+
+    /* Specific iPhone 6 landscape fix */
+    @media (width: 667px) {
+        width: 333px;
+        &:nth-child(odd) {
+            margin-right: 1px;
+        }
+    }
+}
+
+/* Stretch image and remove their margin at the bottom */
+
+.products img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+

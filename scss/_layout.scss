@@ -1,0 +1,64 @@
+body {
+    background-color: #252525;
+}
+
+/* Font face! */
+
+@font-face {
+    font-family: "Museo Slab W01 700";
+    src: url("../fonts/2ac411c9-defd-4f5a-90b0-7179cafd27f4.woff2") format("woff2"),
+    url("../fonts/2ac411c9-defd-4f5a-90b0-7179cafd27f4.woff") format("woff"),
+    url("../fonts/0c52b397-59d0-4df4-aa7c-06ac915a9f66.ttf") format("truetype");
+}
+
+body {
+    font-family: "Museo Slab W01 700", serif;
+}
+
+/* Container. Default styles for small devices. 30px on both sides over 768px. Limit to 1280px wide. */
+
+.container {
+    background-color: white;
+    @media (min-width: 768px) {
+        margin: 30px;
+    }
+    @media (min-width: 1280px) {
+        max-width: 1220px; //1280-30*2
+        margin: 30px auto;
+    }
+}
+
+header {
+    padding: 0 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: .6em;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0.3em;
+    background: rgb(135, 0, 30);
+    color: white;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Hiding images without a source or srcset attribute (in case we use lazy loading) */
+
+img:not([srcset]):not([src]) {
+    visibility: hidden;
+}
