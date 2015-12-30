@@ -4,6 +4,7 @@
     width: 50%;
     float: left;
     margin-bottom: 2em;
+    overflow: hidden;  // Just to avoid images to because browsers with visible scroll bars subtract 16px to the viewport
 
     /* One third of the container from 768px viewport width */
     @media (min-width: 768px) {
