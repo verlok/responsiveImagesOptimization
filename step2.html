@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LazyLoad example of usage with srcset and sizes</title>
+    <link rel="stylesheet" href="css/style-step2.css">
+    <script src="js/vendor/picturefill/dist/picturefill.min.js" async></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Responsive images optimization</h1>
+    </header>
+    <section>
+        <h2>Category page</h2>
+        <ul class="products cf">
+            <li><img src="img/generic/305.png"
+                     srcset="img/napas/41596512KD_99_n_f_241w.jpg 241w,
+                        img/napas/41596512KD_99_n_f_305w.jpg 305w,
+                        img/napas/41596512KD_99_n_f_320w.jpg 320w,
+                        img/napas/41596512KD_99_n_f_374w.jpg 374w,
+                        img/napas/41596512KD_99_n_f_472w.jpg 472w,
+                        img/napas/41596512KD_99_n_f_568w.jpg 568w,
+                        img/napas/41596512KD_99_n_f_610w.jpg 610w,
+                        img/napas/41596512KD_99_n_f_666w.jpg 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/napas/41596480EX_99_n_f_241w.jpg 241w,
+                        img/napas/41596480EX_99_n_f_305w.jpg 305w,
+                        img/napas/41596480EX_99_n_f_320w.jpg 320w,
+                        img/napas/41596480EX_99_n_f_374w.jpg 374w,
+                        img/napas/41596480EX_99_n_f_472w.jpg 472w,
+                        img/napas/41596480EX_99_n_f_568w.jpg 568w,
+                        img/napas/41596480EX_99_n_f_610w.jpg 610w,
+                        img/napas/41596480EX_99_n_f_666w.jpg 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/napas/41546683PX_99_n_f_241w.jpg 241w,
+                        img/napas/41546683PX_99_n_f_305w.jpg 305w,
+                        img/napas/41546683PX_99_n_f_320w.jpg 320w,
+                        img/napas/41546683PX_99_n_f_374w.jpg 374w,
+                        img/napas/41546683PX_99_n_f_472w.jpg 472w,
+                        img/napas/41546683PX_99_n_f_568w.jpg 568w,
+                        img/napas/41546683PX_99_n_f_610w.jpg 610w,
+                        img/napas/41546683PX_99_n_f_666w.jpg 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/napas/41606086KS_99_n_f_241w.jpg 241w,
+                        img/napas/41606086KS_99_n_f_305w.jpg 305w,
+                        img/napas/41606086KS_99_n_f_320w.jpg 320w,
+                        img/napas/41606086KS_99_n_f_374w.jpg 374w,
+                        img/napas/41606086KS_99_n_f_472w.jpg 472w,
+                        img/napas/41606086KS_99_n_f_568w.jpg 568w,
+                        img/napas/41606086KS_99_n_f_610w.jpg 610w,
+                        img/napas/41606086KS_99_n_f_666w.jpg 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 240px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+            <li><img src="img/generic/305.png"
+                     srcset="img/generic/241.png 241w,
+                        img/generic/305.png 305w,
+                        img/generic/320.png 320w,
+                        img/generic/374.png 374w,
+                        img/generic/472.png 472w,
+                        img/generic/568.png 568w,
+                        img/generic/610.png 610w,
+                        img/generic/666.png 666w"
+                     sizes="(min-width: 1280px) 305px,
+                        (min-width: 768px) 236px,
+                        (min-width: 667px) 333px,
+                        (min-width: 568px) 284px,
+                        (min-width: 480px) 236px,
+                        (min-width: 375px) 187px,
+                        (min-width: 320px) 160px,
+                        50vw"
+                     alt="A product image">
+                <div class="title">SOME TEXT</div></li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LazyLoad example of usage with srcset and sizes</title>
+    <link rel="stylesheet" href="css/style-step1.css">
+    <script src="js/vendor/picturefill/dist/picturefill.min.js" async></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Responsive images optimization</h1>
+    </header>
+    <article>
+        <h2>Product page</h2>
+        <div class="productWrapper">
+            <div class="altImgWrapper">
+                <ul class="alternativeImages">
+                    <li><img src="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_f.jpg"
+                             srcset="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_f.jpg 60w,
+                            http://napapijri-cdn.yoox.biz/w_120/products/41/41606086KS_99_n_f.jpg 120w"
+                             sizes="60px"
+                             alt="Alternative 1"></li>
+                    <li><img src="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_r.jpg"
+                             srcset="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_r.jpg 60w,
+                            http://napapijri-cdn.yoox.biz/w_120/products/41/41606086KS_99_n_r.jpg 120w"
+                             sizes="60px"
+                             alt="Alternative 2"></li>
+                    <li><img src="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_e.jpg"
+                             srcset="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_e.jpg 60w,
+                            http://napapijri-cdn.yoox.biz/w_120/products/41/41606086KS_99_n_e.jpg 120w"
+                             sizes="60px"
+                             alt="Alternative 3"></li>
+                    <li><img src="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_d.jpg"
+                             srcset="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_d.jpg 60w,
+                            http://napapijri-cdn.yoox.biz/w_120/products/41/41606086KS_99_n_d.jpg 120w"
+                             sizes="60px"
+                             alt="Alternative 4"></li>
+                    <li><img src="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_a.jpg"
+                             srcset="http://napapijri-cdn.yoox.biz/w_60/products/41/41606086KS_99_n_a.jpg 60w,
+                            http://napapijri-cdn.yoox.biz/w_120/products/41/41606086KS_99_n_a.jpg 120w"
+                             sizes="60px"
+                             alt="Alternative 5"></li>
+                </ul>
+            </div>
+            <div class="mainImage">
+                <img src="http://napapijri-cdn.yoox.biz/w_436/products/41/41606086KS_99_n_f.jpg"
+                     srcset="http://napapijri-cdn.yoox.biz/w_436/products/41/41606086KS_99_n_f.jpg 436w,
+                    http://napapijri-cdn.yoox.biz/w_872/products/41/41606086KS_99_n_f.jpg 872w"
+                     sizes="436px"
+                     alt="Main image">
+            </div>
+            <section class="productInfo">
+                <h1>SOME TEXT</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dignissimos exercitationem harum
+                    ipsam ipsum labore modi neque nisi odio omnis quo quod rem, sequi similique sunt temporibus tenetur
+                    unde vel.</p>
+                <div class="colorSizeContainer">
+                    <div class="colors wrap">
+                        <div class="selectColor colorSelection dropdown">
+                            <div class="selectionTitle">
+                                <span class="icon"></span>
+                                <span class="text">Seleziona colore</span>
+                            </div>
+                            <div class="selectionLabel">
+                                <span class="icon"></span>
+                                <span class="text">Blu scuro</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Arancione" style="background-color: #df120c"></div>
+                                    </div>
+                                </li>
+                                <li class="selected">
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Blu scuro" style="background-color: #3A476D"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde" style="background-color: #3c941f"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde militare" style="background-color: #5A5C35"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Arancione" style="background-color: #ffa300"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Blu scuro" style="background-color: #446d1f"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde" style="background-color: #2b7f94"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde militare" style="background-color: #45335c"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Arancione" style="background-color: #df489f"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Blu scuro" style="background-color: #6d0b22"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde" style="background-color: #338494"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="inner">
+                                        <div class="rgbColor" title="Verde militare" style="background-color: #325c4f"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sizes wrap">
+                        <div class="selectSize sizeWSelection dropdown">
+                            <div class="selectionTitle">
+                                <span class="icon"></span>
+                                <span class="text">Seleziona taglia</span>
+                            </div>
+                            <div class="selectionLabel">
+                                <span class="icon"></span>
+                                <span class="text">Taglia</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="sizeValue">XS</span>
+                                </li>
+                                <li class="selected">
+                                    <span class="sizeValue">S</span>
+                                </li>
+                                <li>
+                                    <span class="sizeValue">M</span>
+                                </li>
+                                <li>
+                                    <span class="sizeValue">L</span>
+                                </li>
+                                <li>
+                                    <span class="sizeValue">XL</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="sizeGuideCustomLink">
+                            <span class="icon"></span>
+                            <span class="text"></span>
+                            <span class="value">Guida alle taglie</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="buttonBox">
+                    <button class="addItemToCart">
+                        <span class="icon"></span>
+                        <span class="addToCartLabelContainer">
+                            <span class="label">Aggiungi alla Shopping Bag</span>
+                        </span>
+                    </button>
+                    <button class="addItemToWishList">
+                        <span class="icon"></span>
+                        <span class="label">Salva</span>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>
