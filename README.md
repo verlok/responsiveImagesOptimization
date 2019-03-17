@@ -1,9 +1,11 @@
 # responsiveImagesOptimization
 
-## Step 1
+&rarr; Open this repo's demo in a browser from [here](www.andreaverlicchi.eu/responsiveImagesOptimization/).
 
-To know what is happening here, read [Responsive images, `img` with `srcset` and `sizes` in a responsive layout](http://www.andreaverlicchi.eu/responsive-images/) on my blog. 
+## step1.html
 
-## Step 2
+To know what is happening here, read [Responsive images, `img` with `srcset` and `sizes` in a responsive layout](https://www.andreaverlicchi.eu/responsive-images-you-dont-need-picture-tag/) on my blog. 
 
-A further optimization! ...
+## step2.html
+
+A further optimization! Let space be elastic, so don't stretch your images. They will thank you being crisper.
