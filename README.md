@@ -1,6 +1,6 @@
 # responsiveImagesOptimization
 
-&rarr; Open this repo's demo in a browser from [here](www.andreaverlicchi.eu/responsiveImagesOptimization/).
+&rarr; Open this repo's demo in a browser from [here](https://www.andreaverlicchi.eu/responsiveImagesOptimization/).
 
 ## step1.html
 
